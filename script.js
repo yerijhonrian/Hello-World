@@ -135,20 +135,20 @@ const t = {
 };
 
 langMenu.querySelectorAll("button").forEach(btn => {
-    btn.onclick = () => {
-        const lang = btn.dataset.lang;
+  btn.onclick = () => {
+    const lang = btn.dataset.lang;
 
-        if (!t[lang]) return;
+    if (!t[lang]) return;
 
-        elements.forEach(el => {
-            const key = el.dataset.i18n;
-            if (t[lang][key]) {
-                el.innerHTML = t[lang][key];
-            }
-        });
+    elements.forEach(el => {
+      const key = el.dataset.i18n;
+      if (t[lang][key]) {
+        el.innerHTML = t[lang][key];
+      }
+    });
 
-        closeLangMenu();
-    };
+    closeLangMenu();
+  };
 });
 
 const shareBtn = document.getElementById("share-btn");
