@@ -161,6 +161,7 @@
  /* BLOCKS */
  .block {
    margin-bottom: 28px;
+   text-align: center;
  }
 
  .block h2 {
